@@ -9,6 +9,7 @@ router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
 router.register('profile', views.UserProfileViewSet)
 router.register('login', views.LoginView, base_name='login')
+router.register('feed', views.UserProfileFeedViewSet) #becasue it model so no need to set base_name
 
 
 urlpatterns = [
